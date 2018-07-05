@@ -1,0 +1,14 @@
+type Mutation {
+    create(name: String, guest: Boolean): Device
+}
+
+type Device {
+    id: String
+    token: String
+    name: String!
+    systemUser: String
+}
+
+type Query {
+    list: [Device]
+}

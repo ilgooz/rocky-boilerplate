@@ -1,4 +1,4 @@
-import { MongoClient, Db } from 'mongodb'
+import { Db } from 'mongodb'
 import Device from '../model/device'
 
 class DeviceDAO {

@@ -62,11 +62,11 @@ class API {
 
     async start() {
         await this.app.run();
-        await this.server.listen(this.options.listenAddress);
+        this.server.listen(this.options.listenAddress);
     }
 
     async shutdown(){
-        await this.app.shutdown();
+        this.app.shutdown();
     }
 }
 

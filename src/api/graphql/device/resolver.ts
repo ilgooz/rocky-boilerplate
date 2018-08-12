@@ -9,6 +9,11 @@ const resolver = {
             };
             return await context.app.service.device.create(device);
         },
+    },
+    Query: {
+      async list(obj, args, context, info) {
+        return await context.app.service.device.list();
+      },
     }
 };
 

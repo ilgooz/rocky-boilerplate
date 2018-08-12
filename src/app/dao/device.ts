@@ -4,7 +4,7 @@ import Device from '../model/device'
 class DeviceDAO {
     private db: Db
     collectionName: string = "devices"
-    
+
     constructor(db: Db){
         this.db = db;
     }

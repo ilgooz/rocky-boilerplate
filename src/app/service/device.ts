@@ -5,7 +5,7 @@ import * as SHAJS from 'sha.js'
 
 class DeviceService {
     dao: DAO
-    
+
     constructor(dao: DAO){
         this.dao = dao;
     }

@@ -44,10 +44,10 @@ class API {
         }));
         this.router.get('/graphql', graphqlKoa({ schema: this.schema }));
         this.router.get('/graphiql', graphiqlKoa({ endpointURL: '/graphql' }));
-        
+
         this.koa.use(this.router.routes());
         this.koa.use(this.router.allowedMethods());
-        
+
         this.server = http.createServer(this.koa.callback());
     }
 
